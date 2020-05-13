@@ -1,0 +1,12 @@
+DROP TABLE IF EXISTS `user_info`;
+CREATE TABLE `user_info` (
+  `user_id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_name` varchar(255) NOT NULL,
+  PRIMARY KEY (`user_id`,`user_name`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of user_info
+-- ----------------------------
+INSERT INTO `user_info` VALUES ('1', '用户1');
+INSERT INTO `user_info` VALUES ('2', '用户2');
